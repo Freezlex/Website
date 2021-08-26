@@ -1,30 +1,34 @@
 <template>
   <div class="home">
-    <!-- <sidebar class="leftcomp"/> -->
-    <div class="content">
-      <h1>FREEZLEX</h1>
-      <p>I'm still working on it !</p>
-      <button id="discord-btn" onclick="window.location.href='https://discord.com/invite/mFQMxqx';"><svg id="discord-logo" viewBox="0 0 24 24" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"><title>Discord icon</title><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg>Discord</button>
+    <Header></Header>
+    <div class="middle-content">
+      <img id="logo" src="https://static-cdn.jtvnw.net/jtv_user_pictures/8ddb50c7-e9dd-4d53-bada-0670e51db70c-profile_image-300x300.png" alt="Freezlex's logo">
+      <h1>Freezlex</h1>
+      <p>Your average OpenSource contributor</p>
     </div>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+
 export default {
-  name: 'Home'
+  name: 'Home',
+  components:{Header, Footer}
 }
 </script>
 <style>
 .home{
   display: flex;
   align-items: center;
+  flex-flow: column;
+  justify-content: space-between;
   height: 100vh;
   width: 100vw;
-  /* Wave color : #bb3658ff */
-  background: url("../assets/wave.svg") no-repeat right bottom;
-  background-size: cover;
 }
-.content{
+.middle-content{
   width: 100%;
   display: flex;
   flex-flow: column;
@@ -32,34 +36,20 @@ export default {
   justify-content: space-around;
 }
 
-.content > h1{
-  font-family: "Big John", Avenir, Helvetica, Arial, sans-serif;
+.middle-content > h1{
+  font-family: "Poppins", Avenir, Helvetica, Arial, sans-serif;
   color: #E5E5E5;
-  font-size: 72px;
+  font-size: 40px;
 }
 
-.content > p{
-  font-family: "Big John", Avenir, Helvetica, Arial, sans-serif;
+.middle-content > p{
+  font-family: "Poppins", Avenir, Helvetica, Arial, sans-serif;
   color: #E5E5E5;
   font-size: 15px;
 }
 
-#discord-logo{
-  height: 30px;
-  margin-right: 5px;
-}
-
-#discord-btn{
-  font-family: "Big John", Avenir, Helvetica, Arial, sans-serif;
-  background-color: #5865F2;
-  border: none;
-  color: white;
-  padding: 10px;
-  text-align: center;
-  text-decoration: none;
-  display: flex;
-  font-size: 16px;
-  margin: 15px 2px;
-  border-radius: 25px;
+#logo{
+  border-radius: 100%;
+  height: 15vh;
 }
 </style>

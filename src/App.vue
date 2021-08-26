@@ -20,9 +20,14 @@
   src: url("./assets/fonts/VcrOsdMono.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-Light.ttf") format("truetype");
+}
+
 :root {
-  --w-main-color: #E5E5E5;
-  --w-secondary-color: #171717;
+  --main-color: #171717;
+  --secondary-color: #E5E5E5;
 }
 
 body, html {
@@ -37,6 +42,6 @@ body, html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  background-color: #C82647;
+  background-color: var(--main-color);
 }
 </style>
