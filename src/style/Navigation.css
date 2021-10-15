@@ -17,8 +17,9 @@
     width: 20%;
 }
 
-.navbar-brand{
+.navbar-brand, .navbar-brand:visited{
     text-decoration: none;
+    color: #E5E5E5;
     font-family: "Poppins", Avenir, Helvetica, Arial, sans-serif;
     font-weight: bold;
     font-size: 120%;
@@ -30,15 +31,14 @@
     margin: 5px;
 }
 
-.nav-item:visited{
+.nav-item, .nav-item:hover, .nav-item:focus, .nav-item:active {
+    text-decoration: none;
     color: inherit;
 }
 
-.navbar-brand:visited{
-    color: #E5E5E5;
-    text-decoration: none;
+.nav-item:visited{
+    color: inherit;
 }
-
 @media (max-width: 400px) {
     .navbar{
         display: none;
