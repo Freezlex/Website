@@ -5,7 +5,8 @@ import '../style/Home.css'
 const rdmString = [
     'Tu le fais quand mon front 6rius ?',
     'Your average  OpenSource contributor',
-    'Road to 500 followers !',
+    'Merci énormément pour les 500 ❤️',
+    'Road to 1k followers !',
     'Nii-Saaaaaaaaaaaaaaaaaaaaaan'
 ]
 
