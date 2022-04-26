@@ -1,6 +1,14 @@
 {
   "name": "freezlex-website",
   "version": "0.0.0",
+  "homepage": "https://github.com/Freezlex/julien-ivars",
+  "repository": "github:Freezlex/julien-ivars.git",
+  "author": {
+    "name": "Freezlex",
+    "email": "",
+    "url": "https://freezlex.com/"
+  },
+  "keywords": ["website", "angular", "open-source", "flashbang", "twitch", "streamer", "netlify"],
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

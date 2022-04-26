@@ -6,10 +6,12 @@ import { AppComponent } from './app.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { ProjectsComponent } from './applications/projects/projects.component';
 import { ApplicationsComponent } from './applications/applications.component';
-import { HeaderComponent } from './applications/header/header.component';
-import { FooterComponent } from './applications/footer/footer.component';
+import { HeaderComponent } from './applications/main/header/header.component';
+import { FooterComponent } from './applications/main/footer/footer.component';
 import { BlogComponent } from './applications/blog/blog.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { FlashbangComponent } from './applications/other/flashbang/flashbang.component';
+import { FlashbangSidebarComponent } from './applications/other/flashbang/flashbang-sidebar/flashbang-sidebar.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     HeaderComponent,
     FooterComponent,
     BlogComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    FlashbangComponent,
+    FlashbangSidebarComponent
   ],
   imports: [
     BrowserModule,
