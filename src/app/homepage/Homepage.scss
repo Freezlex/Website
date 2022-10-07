@@ -1,0 +1,8 @@
+@use "src/scss/mixin";
+
+.Homepage{
+  @include mixin.themed{
+    background: mixin.t(bg);
+    color: mixin.t(text);
+  }
+}
