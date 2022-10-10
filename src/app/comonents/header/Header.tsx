@@ -5,7 +5,7 @@ import ThemeSwitcher from "../theme/ThemeSwitcher";
 const Header = () => {
     return(
         <header>
-            <h1>Freezlex</h1>
+            <div id="watermark"><p>F</p></div>
             <ThemeSwitcher/>
         </header>
     )

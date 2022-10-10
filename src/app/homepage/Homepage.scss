@@ -2,6 +2,9 @@
 
 .Homepage{
   @include mixin.themed{
+    height: 100vh;
+    width: 100vw;
+  // https://angrytools.com/gradient/
     background: mixin.t(bg);
     color: mixin.t(text);
   }
