@@ -1,9 +1,12 @@
 @import "https://unpkg.com/open-props/easings.min.css";
 
-.theme-toggle {
-  --size: 2rem;
+#theme-toggle {
+  --size: 1rem;
   --icon-fill: hsl(210 10% 30%);
   --icon-fill-hover: hsl(210 10% 15%);
+
+  display: flex;
+  align-items: center;
 
   background: none;
   border: none;

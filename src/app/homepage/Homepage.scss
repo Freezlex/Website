@@ -1,11 +1,15 @@
 @use "src/scss/mixin";
 
 .Homepage{
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
   @include mixin.themed{
-    height: 100vh;
-    width: 100vw;
   // https://angrytools.com/gradient/
-    background: mixin.t(bg);
-    color: mixin.t(text);
+    background: mixin.t("background-variant");
+    color: mixin.t("on-background");
   }
 }
