@@ -1,15 +1,125 @@
 @use "src/scss/mixin";
 
-.Homepage{
-  display: flex;
-  flex-flow: column;
-  justify-content: space-between;
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
-  @include mixin.themed{
-  // https://angrytools.com/gradient/
-    background: mixin.t("background-variant");
-    color: mixin.t("on-background");
+@function get-path-to-assets($assetPath){
+  @return $assetPath;
+}
+
+@keyframes drop{
+  0% {
+    top: 110%
+  }
+  100% {
+    top: -100%
+  }
+}
+
+
+@keyframes bg-animation {
+  0% { transform: translate(0,0) }
+  10% { transform: translate(-5%,-5%) }
+  20% { transform: translate(-10%,5%) }
+  30% { transform: translate(5%,-10%) }
+  40% { transform: translate(-5%,15%) }
+  50% { transform: translate(-10%,5%) }
+  60% { transform: translate(15%,0) }
+  70% { transform: translate(0,10%) }
+  80% { transform: translate(-15%,0) }
+  90% { transform: translate(10%,5%) }
+  100% { transform: translate(5%,0) }
+}
+
+.app-homepage{
+  .hero{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    z-index: 0;
+    font-family: 'Open Sans', sans-serif;
+    @include mixin.themed{
+      background-image: mixin.t("background-variant");
+      color: mixin.t("on-background");
+    }
+
+    .hp-top-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      margin: auto;
+      width: 90vw;
+      z-index: 1;
+
+      .bg-line {
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        top: 0;
+        left: 50%;
+        background: rgb(62, 62, 62);
+        overflow: hidden;
+
+        &::after{
+          content: '';
+          display: block;
+          position: absolute;
+          height: 10vh;
+          width: 100%;
+          top: -50%;
+          left: 0;
+          animation: drop 7s 0s infinite;
+          animation-fill-mode: forwards;
+          animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+          @include mixin.themed{
+            background: mixin.t("primary");
+          }
+        }
+
+        &:nth-child(1){
+          margin-left: -25%;
+          &::after{
+            animation-delay: 2s;
+          }
+        }
+
+        &:nth-child(3){
+          margin-left: 25%;
+          &::after{
+            animation-delay: 2.5s;
+          }
+        }
+      }
+    }
+
+    .hp-hero {
+      z-index: 2;
+      display: flex;
+      flex-flow: row;
+      width: 100%;
+      justify-content: space-around;
+
+      .hero-greetings {
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        width: fit-content;
+        padding: 3% 20px;
+        text-transform: uppercase;
+        border-radius: 50px;
+        background-color: rgb(255, 69, 52, 30%);
+
+        h1 {
+          font-size: 1.5em;
+          margin: 0 10px 0 0;
+        }
+
+        svg {
+          width: fit-content;
+          height: 1.5em;
+        }
+      }
+    }
   }
 }
