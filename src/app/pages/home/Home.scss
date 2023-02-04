@@ -1,0 +1,40 @@
+@use "src/scss/mixin";
+
+@function get-path-to-assets($assetPath){
+  @return $assetPath;
+}
+
+.home{
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  z-index: 0;
+  font-family: 'Open Sans', sans-serif;
+  @include mixin.themed{
+    background-image: mixin.t("background-variant");
+    color: mixin.t("on-background");
+  }
+
+  .hero-greetings {
+    display: flex;
+    flex-flow: row;
+    align-items: baseline;
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: rgb(255, 69, 52, 30%);
+
+    .hero-nickname {
+      font-size: 1.5em;
+      margin: 0 10px;
+      color: transparent;
+      -webkit-text-stroke-width: 1px;
+      @include mixin.themed{
+        -webkit-text-stroke-color: mixin.t("primary");
+      }
+
+    }
+  }
+}

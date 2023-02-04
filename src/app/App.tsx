@@ -3,12 +3,13 @@ import './App.scss';
 import ThemeContext, {ThemeContextProvider} from "./shared/ThemeProvider/ThemeContext";
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import Homepage from "./homepage/Homepage";
+import Home from "./pages/home/Home";
 
 const WrappedApp = () => {
     const router = createBrowserRouter([
         {
             path: "/",
-            element: <Homepage/>
+            element: <Home/>
         }
     ])
 
