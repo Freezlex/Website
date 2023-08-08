@@ -1,0 +1,127 @@
+:root {
+  --white--default: #fff;
+  --white--silent: #FFFFFF80;
+  --quill-gray: #DADAD9;
+  --dark--default: #000;
+  --dark--silent: #0000000C;
+  --ebony: #0C0E1C;
+  --space--cadet: #242A56;
+  --persimmon: #ff684d;
+  --malibu: #78D8FF;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: var(--ebony);
+    --txt: var(--white--default);
+    --txt--silent: var(--white--silent);
+    --primary: var(--persimmon);
+    --secondary: var(--space--cadet);
+    --accent1: var(--malibu);
+    --accent2: var(--quill-gray);
+    color-scheme: dark;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: var(--white--default);
+    --txt: var(--ebony);
+    --txt--silent: var(--dark--silent);
+    --primary: var(--persimmon);
+    --secondary: var(--space--cadet);
+    --accent1: var(--malibu);
+    --accent2: var(--quill-gray);
+    color-scheme: light;
+  }
+}
+
+:root[color-scheme="dark"] {
+  --bg: var(--ebony);
+  --txt: var(--white--default);
+  --txt--silent: var(--white--silent);
+  --primary: var(--persimmon);
+  --secondary: var(--space--cadet);
+  --accent1: var(--malibu);
+  --accent2: var(--quill-gray);
+  color-scheme: dark;
+}
+
+:root[color-scheme="light"] {
+  --bg: var(--white--default);
+  --txt: var(--ebony);
+  --txt--silent: var(--dark--silent);
+  --primary: var(--persimmon);
+  --secondary: var(--space--cadet);
+  --accent1: var(--malibu);
+  --accent2: var(--quill-gray);
+  color-scheme: light;
+}
+
+a {
+  text-decoration: none;
+  color: var(--txt);
+}
+
+svg {
+  color: var(--txt);
+  fill: var(--txt);
+}
+
+.primary {
+  &:is(a), &:is(p) {
+    color: var(--primary);
+  }
+
+  &:is(button), &:is(div) {
+    background-color: var(--primary);
+    color: var(--dark--default);
+
+    &.hover:hover {
+      color: var(--white--default);
+    }
+  }
+}
+
+.secondary {
+  &:is(a), &:is(p) {
+    color: var(--secondary);
+  }
+
+  &:is(button), &:is(div) {
+    background-color: var(--secondary);
+    color: var(--white--default);
+  }
+}
+
+.accent1 {
+  &:is(a), &:is(p) {
+    color: var(--accent1);
+  }
+
+  &:is(button), &:is(div) {
+    background-color: var(--accent1);
+    color: var(--dark--default);
+  }
+}
+
+.accent2 {
+  &:is(a), &:is(p) {
+    color: var(--accent2);
+  }
+
+  &:is(button), &:is(div) {
+    background-color: var(--accent2);
+    color: var(--dark--default);
+  }
+}
+
+.silent {
+  &:is(a), &:is(p) {
+    color: var(--txt--silent);
+  }
+
+  &:is(button), &:is(div) {
+    background-color: var(--txt--silent);
+  }
+}
