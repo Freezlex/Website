@@ -1,18 +1,28 @@
 :root {
+  // Variables
+  --bg: #000;
+  --txt: #000;
+  --txt--silent:#000;
+  --primary: #000;
+  --secondary: #000;
+  --accent1: #000;
+  --accent2: #000;
+  --background--gradient: linear-gradient(31deg, var(--primary) 0%, var(--bg) 20%, var(--bg) 80%, var(--secondary) 100%);
+  // Color values
   --white--default: #fff;
   --white--silent: #FFFFFF80;
   --quill-gray: #DADAD9;
   --dark--default: #000;
   --dark--silent: #0000000C;
   --ebony: #0C0E1C;
-  --space--cadet: #242A56;
+  --space--cadet: #191C39;
   --persimmon: #ff684d;
   --malibu: #78D8FF;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: var(--ebony);
+    --bg: var(--dark--default);
     --txt: var(--white--default);
     --txt--silent: var(--white--silent);
     --primary: var(--persimmon);
@@ -37,7 +47,7 @@
 }
 
 :root[color-scheme="dark"] {
-  --bg: var(--ebony);
+  --bg: var(--dark--default);
   --txt: var(--white--default);
   --txt--silent: var(--white--silent);
   --primary: var(--persimmon);
