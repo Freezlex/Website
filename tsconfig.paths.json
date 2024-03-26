@@ -5,11 +5,11 @@
       "@/*": [
         "app/*"
       ],
-      "@assets/*": ["app/assets/*"],
+      "@assets/*": ["assets/*"],
       "@components/*": ["app/components/*"],
       "@hooks/*": ["app/hooks/*"],
       "@shared/*": ["app/components/shared/*"],
-      "@svg/*": ["app/assets/images/svg/*"]
+      "@svg/*": ["assets/images/svg/*"]
     }
   }
 }

@@ -3,7 +3,7 @@ import './hero.component.scss'
 import { ReactComponent as MapPin} from '@svg/map-pin.svg';
 import {Link} from "react-router-dom";
 
-export default function Hero() {
+export default function HomeHero() {
     return(
         <div className='hero-main'>
             <div className='hero-top'>

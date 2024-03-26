@@ -6,7 +6,7 @@ import Footer from "@shared/footer/footer.component";
 export default function NotFoundComponent() {
     return<div className='page standard'>
         <Header/>
-        <p>Huuu ... It’s weird</p>
+        <p>Uh, uh, no, sorry, I&apos;m not done here either!</p>
         <Footer/>
         </div>;
 }

@@ -3,7 +3,11 @@
   flex-flow: column;
   align-items: center;
   min-height: 100vh;
-  background: var(--bg);
+  background-color: black;
+  background-image: url("/assets/images/svg/background.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .page {

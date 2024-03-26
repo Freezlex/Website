@@ -1,8 +1,8 @@
-@use 'app/assets/style/global';
+@use 'assets/style/global';
 
 @font-face {
   font-family: Outfit;
-  src: url('app/assets/font/Outfit.ttf') format('truetype');
+  src: url('assets/font/Outfit.ttf') format('truetype');
 }
 
 body {
