@@ -8,7 +8,7 @@ import { ReactComponent as TwitterLogo } from '@svg/brand/twitter.svg'
 
 export default function TemporaryHomeBody() {
     function redirectTo(url: string) {
-        return window.location.href = url;
+        return window.open(url, '_blank')?.focus();
     }
 
     return(

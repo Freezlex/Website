@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.scss';
 import reportWebVitals from './reportWebVitals';
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
-import NotFoundComponent from "@components/404/not-found.component";
-import HomeComponent from "@components/home/home.component";
+import NotFoundComponent from '@/pages/not-found/not-found.component';
+import HomeComponent from '@/pages/home/home.component';
 
 
 
@@ -16,11 +16,11 @@ const router = createBrowserRouter(
     [
         {
             path: "/",
-            element: <HomeComponent />
+            element: <HomeComponent/>
         },
         {
             path: "*",
-            element: <NotFoundComponent />
+            element: <NotFoundComponent/>
         },
     ],
     {
