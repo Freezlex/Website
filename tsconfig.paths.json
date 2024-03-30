@@ -7,6 +7,7 @@
       ],
       "@assets/*": ["assets/*"],
       "@components/*": ["app/components/*"],
+      "@pages/*": ["app/pages/*"],
       "@hooks/*": ["app/hooks/*"],
       "@shared/*": ["app/components/shared/*"],
       "@svg/*": ["assets/images/svg/*"]

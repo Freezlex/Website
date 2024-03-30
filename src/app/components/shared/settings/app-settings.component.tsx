@@ -1,5 +1,5 @@
 import React from "react";
-import {ThemeSwitcher} from "./themeSwitcher/theme-switcher.component";
+import {ThemeSwitcher} from "./theme-switcher/theme-switcher.component";
 
 export default class AppSettings extends React.Component<{}, {isPaneOpen: boolean}> {
 
