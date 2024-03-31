@@ -1,8 +1,9 @@
 {
   "name": "freezlex-website",
-  "author": "Julien Ivars",
+  "author": "Freezlex",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "homepage": "https://freezlex.github.io/website",
   "dependencies": {
     "@craco/craco": "^7.1.0",
     "@testing-library/jest-dom": "^5.16.5",
