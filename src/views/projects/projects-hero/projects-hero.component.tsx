@@ -1,6 +1,5 @@
 import React from "react";
 import './projects-hero.component.css'
-import {ReactComponent as MapPin} from "*.svg";
 import {Link} from "react-router-dom";
 
 export default function ProjectsHeroComponent() {
