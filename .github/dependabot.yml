@@ -13,3 +13,5 @@ updates:
       - "npm"
       - "dependencies"
       - "security"
+    reviewers:
+      - "Freezlex"
