@@ -15,12 +15,11 @@ export default function SocialLinksComponent() {
         </div>
         <div className="h-section">
           <p>
-            Because I spend my life having new projects, starting them and never
-            finishing them, this page gives you inspiration if you ever get
-            bored.
+            All the social networks where you’ll find me, don’t hesitate to join
+            me!
           </p>
           <p className={"silent"}>
-            Maybe one day I’ll take the time to finish one or two of them.
+            And maybe one day I’ll be more regular on twitch...
           </p>
         </div>
       </div>
